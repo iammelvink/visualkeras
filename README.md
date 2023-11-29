@@ -1,12 +1,8 @@
 # visualkeras for Keras / TensorFlow
 
 [![Latest Version](https://img.shields.io/pypi/v/visualkeras.svg)](https://pypi.python.org/pypi/visualkeras)
-[![Build Status](https://travis-ci.org/paulgavrikov/visualkeras.svg?branch=master)](https://travis-ci.org/paulgavrikov/visualkeras)
+<!-- [![Build Status](https://travis-ci.org/iammelvink/visualkeras.svg?branch=master)](https://travis-ci.org/iammelvink/visualkeras) -->
 [![Download Count](https://img.shields.io/pypi/dm/visualkeras.svg)](https://pypi.python.org/pypi/visualkeras)
-
-## ⚠ Maintainer Wanted ⚠
-
-When I released this package a few years ago just before I started my PhD I was almost certain that I'd continue to use TensorFlow and would require this library daily. However, nowadays I never use TensorFlow... As such maintaining a package for a framework that I do not use while doing a PhD has become very cumbersome. That's why I need you! Yes, you! If you have at least some experience with OSS and know how to create good code please contact me to become a maintainer. There is a lot of potential in this framwork and it has gained quite some traction!
 
 ## Introduction
 Visualkeras is a Python package to help visualize Keras (either standalone or included in tensorflow) neural network architectures. It allows easy styling to fit most 
@@ -33,7 +29,7 @@ To update visualkeras to the latest version, add the `--upgrade` flag to the abo
 
 If you want the latest (potentially unstable) features you can also directly install from the github master branch:
 ```bash
-pip install git+https://github.com/paulgavrikov/visualkeras
+pip install git+https://github.com/iammelvink/visualkeras
 ```
 
 ## Usage
@@ -129,6 +125,13 @@ visualkeras.layered_view(model, scale_xy=1, scale_z=1, max_z=1000)
 ```
 ![True scale view of a VGG16 CNN](figures/vgg16_scaling.png)
 _Note: Scaled models may hide the true complexity of a layer, but are visually more appealing._
+
+###### Layered visualization of non-sequential models
+
+Here is a sample of a miniature GoogLeNet model with a legend.
+
+![Layered view of a miniature GoogLeNet with legend](figures/mini_googlenet_layered_legend.png)
+_Note: This feature was more of a small update that was not really tested so it might not work perfectly._
 
 ## FAQ
 
