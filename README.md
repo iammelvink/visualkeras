@@ -126,12 +126,12 @@ visualkeras.layered_view(model, scale_xy=1, scale_z=1, max_z=1000)
 ![True scale view of a VGG16 CNN](figures/vgg16_scaling.png)
 _Note: Scaled models may hide the true complexity of a layer, but are visually more appealing._
 
-###### Layered visualization of non-sequential models
-
-Here is a sample of a miniature GoogLeNet model with a legend.
-
-![Layered view of a miniature GoogLeNet with legend](figures/mini_googlenet_layered_legend.png)
-_Note: This feature was more of a small update that was not really tested so it might not work perfectly._
+###### Show layer dimension in legend mode
+If you need to show layer dimension you must set `legend=True` and `show_dimension=True` in `layered_view`
+```python
+visualkeras.layered_view(model, legend=True, show_dimension=True)
+```
+![Show layer dimension in legend mode](figures/vgg16_legend_show_dimension.png)
 
 ## FAQ
 
